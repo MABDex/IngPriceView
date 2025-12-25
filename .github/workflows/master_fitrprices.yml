@@ -3,7 +3,7 @@ name: Build and deploy JAR app to Azure Web App - FitRprices
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 jobs:
@@ -56,3 +56,4 @@ jobs:
           app-name: 'FitRprices'
           slot-name: 'Production'
           package: java-app/*.jar
+
