@@ -50,9 +50,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_22DCC3DEF2CC4BFB9894CD53C86C2368 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_E1F4964D6991484AA34FF8BC800B6145 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_29CCF95D44B94065AFABBBEE48F68788 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_E4CB58AB2602474AB354D494ACA8D2CA }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C522C55225A445A3A578E765770E62D7 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2328FB683AB94F85A2767C49E9C6A838 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -61,3 +61,4 @@ jobs:
           app-name: 'FitRprices'
           slot-name: 'Production'
           package: '*.jar'
+
